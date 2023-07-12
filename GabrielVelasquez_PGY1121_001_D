@@ -1,0 +1,478 @@
+import numpy as np
+programa=0;UFdepaA=0
+listarut=[]
+ventasdepaA=0;ventasdepaB=0;ventasdepaC=0;ventasdepaD=0
+cantdepaA=[]
+pisodepaA=[1,2,3,4,5,6,7,8,9,10]
+pisodepaB=[1,2,3,4,5,6,7,8,9,10]
+pisodepaC=[1,2,3,4,5,6,7,8,9,10]
+pisodepaD=[1,2,3,4,5,6,7,8,9,10]
+a=0;b=0;c=0;d=0
+def depasosiosi():
+  print("\n1. Comprar departamentos\n2. Mostrar departamentos disponibles\n3. Ver listado de compradores\n4. Mostrar ganancias totales\n5. Salir del programa")
+print("Bienvenido al programa casa feliz\n¿Que desa hacer ahora?")
+while programa==0:
+  depasosiosi()
+  barco=int(input("\n¿Cual opcion desea escoger?\n"))
+  if barco==1:
+    a=str(input("¿Cual tipo de departamento desea revisar?\n(Existen 4 tipos, A,B,C,D)\n"))
+    if a== "A" or a=="a":
+      b=int(input(f"{pisodepaA}\nEstos son los pisos con este tipo de departamento\n¿Cual de estos quiere?\n"))
+      if b==1:
+        try:
+          pisodepaA.remove(1)
+          print("Su departamento fue comprado con exito\n")
+          pisodepaA.insert(0,"x")
+          listarut.append("A1")
+          ventasdepaA=ventasdepaA+3800
+          rut=int(input("Ingrese su rut para poder encontrarlo despues\n(Sin puntos ni guiones y tampoco digito verificador)\n"))
+          listarut.append(rut)
+        except:
+          print("Este departamento ya fue comprado")
+      elif b==2:
+        try:
+          pisodepaA.remove(2)
+          print("Su departamento fue comprado con exito\n")
+          pisodepaA.insert(1,"x")
+          listarut.append("A2")
+          ventasdepaA=ventasdepaA+3800
+          rut=int(input("Ingrese su rut para poder encontrarlo despues\n(Sin puntos ni guiones y tampoco digito verificador)\n"))
+          listarut.append(rut)
+        except:
+          print("Este departamento ya fue comprado")
+      elif b==3:
+        try:
+          pisodepaA.remove(3)
+          print("Su departamento fue comprado con exito\n")
+          pisodepaA.insert(2,"x")
+          listarut.append("A3")
+          ventasdepaA=ventasdepaA+3800
+          rut=int(input("Ingrese su rut para poder encontrarlo despues\n(Sin puntos ni guiones y tampoco digito verificador)\n"))
+          listarut.append(rut)
+        except:
+          print("Este departamento ya fue comprado")
+      elif b==4:
+        try:
+          pisodepaA.remove(4)
+          print("Su departamento fue comprado con exito\n")
+          pisodepaA.insert(3,"x")
+          listarut.append("A4")
+          ventasdepaA=ventasdepaA+3800
+          rut=int(input("Ingrese su rut para poder encontrarlo despues\n(Sin puntos ni guiones y tampoco digito verificador)\n"))
+          listarut.append(rut)
+        except:
+          print("Este departamento ya fue comprado")
+      elif b==5:
+        try:
+          pisodepaA.remove(5)
+          print("Su departamento fue comprado con exito\n")
+          pisodepaA.insert(4,"x")
+          listarut.append("A5")
+          ventasdepaA=ventasdepaA+3800
+          rut=int(input("Ingrese su rut para poder encontrarlo despues\n(Sin puntos ni guiones y tampoco digito verificador)\n"))
+          listarut.append(rut)
+        except:
+          print("Este departamento ya fue comprado")
+      elif b==6:
+        try:
+          pisodepaA.remove(6)
+          print("Su departamento fue comprado con exito\n")
+          pisodepaA.insert(5,"x")
+          listarut.append("A6")
+          ventasdepaA=ventasdepaA+3800
+          rut=int(input("Ingrese su rut para poder encontrarlo despues\n(Sin puntos ni guiones y tampoco digito verificador)\n"))
+          listarut.append(rut)
+        except:
+          print("Este departamento ya fue comprado")
+      elif b==7:
+        try:
+          pisodepaA.remove(7)
+          print("Su departamento fue comprado con exito\n")
+          pisodepaA.insert(6,"x")
+          listarut.append("A7")
+          ventasdepaA=ventasdepaA+3800
+          rut=int(input("Ingrese su rut para poder encontrarlo despues\n(Sin puntos ni guiones y tampoco digito verificador)\n"))
+          listarut.append(rut)
+        except:
+          print("Este departamento ya fue comprado")
+      elif b==8:
+        try:
+          pisodepaA.remove(8)
+          print("Su departamento fue comprado con exito\n")
+          pisodepaA.insert(7,"x")
+          listarut.append("A8")
+          ventasdepaA=ventasdepaA+3800
+          rut=int(input("Ingrese su rut para poder encontrarlo despues\n(Sin puntos ni guiones y tampoco digito verificador)\n"))
+          listarut.append(rut)
+        except:
+          print("Este departamento ya fue comprado")
+      elif b==9:
+        try:
+          pisodepaA.remove(9)
+          print("Su departamento fue comprado con exito\n")
+          pisodepaA.insert(8,"x")
+          listarut.append("A9")
+          ventasdepaA=ventasdepaA+3800
+          rut=int(input("Ingrese su rut para poder encontrarlo despues\n(Sin puntos ni guiones y tampoco digito verificador)\n"))
+          listarut.append(rut)
+        except:
+          print("Este departamento ya fue comprado")
+      elif b==10:
+        try:
+          pisodepaA.remove(10)
+          print("Su departamento fue comprado con exito\n")
+          pisodepaA.insert(9,"x")
+          listarut.append("A10")
+          ventasdepaA=ventasdepaA+3800
+          rut=int(input("Ingrese su rut para poder encontrarlo despues\n(Sin puntos ni guiones y tampoco digito verificador)\n"))
+          listarut.append(rut)
+        except:
+          print("Este departamento ya fue comprado")
+    elif a== "B" or a=="b":
+      b=int(input(f"{pisodepaB}\nEstos son los pisos con este tipo de departamento\n¿Cual de estos quiere?\n"))
+      if b==1:
+        try:
+          pisodepaB.remove(1)
+          print("Su departamento fue comprado con exito\n")
+          pisodepaB.insert(0,"x")
+          listarut.append("B1")
+          ventasdepaB=ventasdepaB+3000
+          rut=int(input("Ingrese su rut para poder encontrarlo despues\n(Sin puntos ni guiones y tampoco digito verificador)\n"))
+          listarut.append(rut)
+        except:
+          print("Este departamento ya fue comprado")
+      elif b==2:
+        try:
+          pisodepaB.remove(2)
+          print("Su departamento fue comprado con exito\n")
+          pisodepaB.insert(1,"x")
+          listarut.append("B2")
+          ventasdepaB=ventasdepaB+3000
+          rut=int(input("Ingrese su rut para poder encontrarlo despues\n(Sin puntos ni guiones y tampoco digito verificador)\n"))
+          listarut.append(rut)
+        except:
+          print("Este departamento ya fue comprado")
+      elif b==3:
+        try:
+          pisodepaB.remove(3)
+          print("Su departamento fue comprado con exito\n")
+          pisodepaB.insert(2,"x")
+          listarut.append("B2")
+          ventasdepaB=ventasdepaB+3000
+          rut=int(input("Ingrese su rut para poder encontrarlo despues\n(Sin puntos ni guiones y tampoco digito verificador)\n"))
+          listarut.append(rut)
+        except:
+          print("Este departamento ya fue comprado")
+      elif b==4:
+        try:
+          pisodepaB.remove(4)
+          print("Su departamento fue comprado con exito\n")
+          pisodepaB.insert(3,"x")
+          listarut.append("B2")
+          ventasdepaB=ventasdepaB+3000
+          rut=int(input("Ingrese su rut para poder encontrarlo despues\n(Sin puntos ni guiones y tampoco digito verificador)\n"))
+          listarut.append(rut)
+        except:
+          print("Este departamento ya fue comprado")
+      elif b==5:
+        try:
+          pisodepaB.remove(5)
+          print("Su departamento fue comprado con exito\n")
+          pisodepaB.insert(4,"x")
+          listarut.append("B2")
+          ventasdepaB=ventasdepaB+3000
+          rut=int(input("Ingrese su rut para poder encontrarlo despues\n(Sin puntos ni guiones y tampoco digito verificador)\n"))
+          listarut.append(rut)
+        except:
+          print("Este departamento ya fue comprado")
+      elif b==6:
+        try:
+          pisodepaB.remove(6)
+          print("Su departamento fue comprado con exito\n")
+          pisodepaB.insert(5,"x")
+          listarut.append("B2")
+          ventasdepaB=ventasdepaB+3000
+          rut=int(input("Ingrese su rut para poder encontrarlo despues\n(Sin puntos ni guiones y tampoco digito verificador)\n"))
+          listarut.append(rut)
+        except:
+          print("Este departamento ya fue comprado")
+      elif b==7:
+        try:
+          pisodepaB.remove(7)
+          print("Su departamento fue comprado con exito\n")
+          pisodepaB.insert(6,"x")
+          listarut.append("B2")
+          ventasdepaB=ventasdepaB+3000
+          rut=int(input("Ingrese su rut para poder encontrarlo despues\n(Sin puntos ni guiones y tampoco digito verificador)\n"))
+          listarut.append(rut)
+        except:
+          print("Este departamento ya fue comprado")
+      elif b==8:
+        try:
+          pisodepaB.remove(8)
+          print("Su departamento fue comprado con exito\n")
+          pisodepaB.insert(7,"x")
+          listarut.append("B2")
+          ventasdepaB=ventasdepaB+3000
+          rut=int(input("Ingrese su rut para poder encontrarlo despues\n(Sin puntos ni guiones y tampoco digito verificador)\n"))
+          listarut.append(rut)
+        except:
+          print("Este departamento ya fue comprado")
+      elif b==9:
+        try:
+          pisodepaB.remove(9)
+          print("Su departamento fue comprado con exito\n")
+          pisodepaB.insert(8,"x")
+          listarut.append("B2")
+          ventasdepaB=ventasdepaB+3000
+          rut=int(input("Ingrese su rut para poder encontrarlo despues\n(Sin puntos ni guiones y tampoco digito verificador)\n"))
+          listarut.append(rut)
+        except:
+          print("Este departamento ya fue comprado")
+      elif b==10:
+        try:
+          pisodepaB.remove(10)
+          print("Su departamento fue comprado con exito\n")
+          pisodepaB.insert(9,"x")
+          listarut.append("B2")
+          ventasdepaB=ventasdepaB+3000
+          rut=int(input("Ingrese su rut para poder encontrarlo despues\n(Sin puntos ni guiones y tampoco digito verificador)\n"))
+          listarut.append(rut)
+        except:
+          print("Este departamento ya fue comprado")
+    elif a== "C" or a=="c":
+      b=int(input(f"{pisodepaC}\nEstos son los pisos con este tipo de departamento\n¿Cual de estos quiere?\n"))
+      if b==1:
+        try:
+          pisodepaC.remove(1)
+          print("Su departamento fue comprado con exito\n")
+          pisodepaC.insert(0,"x")
+          listarut.append("C1")
+          ventasdepaC=ventasdepaC+2800
+          rut=int(input("Ingrese su rut para poder encontrarlo despues\n(Sin puntos ni guiones y tampoco digito verificador)\n"))
+          listarut.append(rut)
+        except:
+          print("Este departamento ya fue comprado")
+      elif b==2:
+        try:
+          pisodepaC.remove(2)
+          print("Su departamento fue comprado con exito\n")
+          pisodepaC.insert(1,"x")
+          listarut.append("C2")
+          ventasdepaC=ventasdepaC+2800
+          rut=int(input("Ingrese su rut para poder encontrarlo despues\n(Sin puntos ni guiones y tampoco digito verificador)\n"))
+          listarut.append(rut)
+        except:
+          print("Este departamento ya fue comprado")
+      elif b==3:
+        try:
+          pisodepaC.remove(3)
+          print("Su departamento fue comprado con exito\n")
+          pisodepaC.insert(2,"x")
+          listarut.append("C3")
+          ventasdepaC=ventasdepaC+2800
+          rut=int(input("Ingrese su rut para poder encontrarlo despues\n(Sin puntos ni guiones y tampoco digito verificador)\n"))
+          listarut.append(rut)
+        except:
+          print("Este departamento ya fue comprado")
+      elif b==4:
+        try:
+          pisodepaC.remove(4)
+          print("Su departamento fue comprado con exito\n")
+          pisodepaC.insert(3,"x")
+          listarut.append("C4")
+          ventasdepaC=ventasdepaC+2800
+          rut=int(input("Ingrese su rut para poder encontrarlo despues\n(Sin puntos ni guiones y tampoco digito verificador)\n"))
+          listarut.append(rut)
+        except:
+          print("Este departamento ya fue comprado")
+      elif b==5:
+        try:
+          pisodepaC.remove(5)
+          print("Su departamento fue comprado con exito\n")
+          pisodepaC.insert(4,"x")
+          listarut.append("C5")
+          ventasdepaC=ventasdepaC+2800
+          rut=int(input("Ingrese su rut para poder encontrarlo despues\n(Sin puntos ni guiones y tampoco digito verificador)\n"))
+          listarut.append(rut)
+        except:
+          print("Este departamento ya fue comprado")
+      elif b==6:
+        try:
+          pisodepaC.remove(6)
+          print("Su departamento fue comprado con exito\n")
+          pisodepaC.insert(5,"x")
+          listarut.append("C6")
+          ventasdepaC=ventasdepaC+2800
+          rut=int(input("Ingrese su rut para poder encontrarlo despues\n(Sin puntos ni guiones y tampoco digito verificador)\n"))
+          listarut.append(rut)
+        except:
+          print("Este departamento ya fue comprado")
+      elif b==7:
+        try:
+          pisodepaC.remove(7)
+          print("Su departamento fue comprado con exito\n")
+          pisodepaC.insert(6,"x")
+          listarut.append("C7")
+          ventasdepaC=ventasdepaC+2800
+          rut=int(input("Ingrese su rut para poder encontrarlo despues\n(Sin puntos ni guiones y tampoco digito verificador)\n"))
+          listarut.append(rut)
+        except:
+          print("Este departamento ya fue comprado")
+      elif b==8:
+        try:
+          pisodepaC.remove(8)
+          print("Su departamento fue comprado con exito\n")
+          pisodepaC.insert(7,"x")
+          listarut.append("C8")
+          ventasdepaC=ventasdepaC+2800
+          rut=int(input("Ingrese su rut para poder encontrarlo despues\n(Sin puntos ni guiones y tampoco digito verificador)\n"))
+          listarut.append(rut)
+        except:
+          print("Este departamento ya fue comprado")
+      elif b==9:
+        try:
+          pisodepaC.remove(9)
+          print("Su departamento fue comprado con exito\n")
+          pisodepaC.insert(8,"x")
+          listarut.append("C9")
+          ventasdepaC=ventasdepaC+2800
+          rut=int(input("Ingrese su rut para poder encontrarlo despues\n(Sin puntos ni guiones y tampoco digito verificador)\n"))
+          listarut.append(rut)
+        except:
+          print("Este departamento ya fue comprado")
+      elif b==10:
+        try:
+          pisodepaC.remove(10)
+          print("Su departamento fue comprado con exito\n")
+          pisodepaC.insert(9,"x")
+          listarut.append("C10")
+          ventasdepaC=ventasdepaC+2800
+          rut=int(input("Ingrese su rut para poder encontrarlo despues\n(Sin puntos ni guiones y tampoco digito verificador)\n"))
+          listarut.append(rut)
+        except:
+          print("Este departamento ya fue comprado")
+    elif a== "D" or a=="d":
+      b=int(input(f"{pisodepaD}\nEstos son los pisos con este tipo de departamento\n¿Cual de estos quiere?\n"))
+      if b==1:
+        try:
+          pisodepaD.remove(1)
+          print("Su departamento fue comprado con exito\n")
+          pisodepaD.insert(0,"x")
+          listarut.append("D1")
+          ventasdepaD=ventasdepaD+3500
+          rut=int(input("Ingrese su rut para poder encontrarlo despues\n(Sin puntos ni guiones y tampoco digito verificador)\n"))
+          listarut.append(rut)
+        except:
+          print("Este departamento ya fue comprado")
+      elif b==2:
+        try:
+          pisodepaD.remove(2)
+          print("Su departamento fue comprado con exito\n")
+          pisodepaD.insert(1,"x")
+          listarut.append("D2")
+          ventasdepaD=ventasdepaD+3500
+          rut=int(input("Ingrese su rut para poder encontrarlo despues\n(Sin puntos ni guiones y tampoco digito verificador)\n"))
+          listarut.append(rut)
+        except:
+          print("Este departamento ya fue comprado")
+      elif b==3:
+        try:
+          pisodepaD.remove(3)
+          print("Su departamento fue comprado con exito\n")
+          pisodepaD.insert(2,"x")
+          listarut.append("D3")
+          ventasdepaD=ventasdepaD+3500
+          rut=int(input("Ingrese su rut para poder encontrarlo despues\n(Sin puntos ni guiones y tampoco digito verificador)\n"))
+          listarut.append(rut)
+        except:
+          print("Este departamento ya fue comprado")
+      elif b==4:
+        try:
+          pisodepaD.remove(4)
+          print("Su departamento fue comprado con exito\n")
+          pisodepaD.insert(3,"x")
+          listarut.append("D4")
+          ventasdepaD=ventasdepaD+3500
+          rut=int(input("Ingrese su rut para poder encontrarlo despues\n(Sin puntos ni guiones y tampoco digito verificador)\n"))
+          listarut.append(rut)
+        except:
+          print("Este departamento ya fue comprado")
+      elif b==5:
+        try:
+          pisodepaD.remove(5)
+          print("Su departamento fue comprado con exito\n")
+          pisodepaD.insert(4,"x")
+          listarut.append("D5")
+          ventasdepaD=ventasdepaD+3500
+          rut=int(input("Ingrese su rut para poder encontrarlo despues\n(Sin puntos ni guiones y tampoco digito verificador)\n"))
+          listarut.append(rut)
+        except:
+          print("Este departamento ya fue comprado")
+      elif b==6:
+        try:
+          pisodepaD.remove(6)
+          print("Su departamento fue comprado con exito\n")
+          pisodepaD.insert(5,"x")
+          listarut.append("D6")
+          ventasdepaD=ventasdepaD+3500
+          rut=int(input("Ingrese su rut para poder encontrarlo despues\n(Sin puntos ni guiones y tampoco digito verificador)\n"))
+          listarut.append(rut)
+        except:
+          print("Este departamento ya fue comprado")
+      elif b==7:
+        try:
+          pisodepaD.remove(7)
+          print("Su departamento fue comprado con exito\n")
+          pisodepaD.insert(6,"x")
+          listarut.append("D7")
+          ventasdepaD=ventasdepaD+3500
+          rut=int(input("Ingrese su rut para poder encontrarlo despues\n(Sin puntos ni guiones y tampoco digito verificador)\n"))
+          listarut.append(rut)
+        except:
+          print("Este departamento ya fue comprado")
+      elif b==8:
+        try:
+          pisodepaD.remove(8)
+          print("Su departamento fue comprado con exito\n")
+          pisodepaD.insert(7,"x")
+          listarut.append("D8")
+          ventasdepaD=ventasdepaD+3500
+          rut=int(input("Ingrese su rut para poder encontrarlo despues\n(Sin puntos ni guiones y tampoco digito verificador)\n"))
+          listarut.append(rut)
+        except:
+          print("Este departamento ya fue comprado")
+      elif b==9:
+        try:
+          pisodepaD.remove(9)
+          print("Su departamento fue comprado con exito\n")
+          pisodepaD.insert(8,"x")
+          listarut.append("D9")
+          ventasdepaD=ventasdepaD+3500
+          rut=int(input("Ingrese su rut para poder encontrarlo despues\n(Sin puntos ni guiones y tampoco digito verificador)\n"))
+          listarut.append(rut)
+        except:
+          print("Este departamento ya fue comprado")
+      elif b==10:
+        try:
+          pisodepaD.remove(10)
+          print("Su departamento fue comprado con exito\n")
+          pisodepaD.insert(9,"x")
+          listarut.append("D10")
+          ventasdepaD=ventasdepaD+3500
+          rut=int(input("Ingrese su rut para poder encontrarlo despues\n(Sin puntos ni guiones y tampoco digito verificador)\n"))
+          listarut.append(rut)
+        except:
+          print("Este departamento ya fue comprado")
+  elif barco==2:
+    print(pisodepaA)
+    print(pisodepaB)
+    print(pisodepaC)
+    print(pisodepaD)
+  elif barco==3:
+    print(listarut)
+    print("aqui estan los rut de los compradores y los departamentos que compro")
+  elif barco==5:
+    print("Un gusto, me llamo Gabriel Velasquez y este fue mi programa")
+  elif barco==4:
+    print(f"{ventasdepaA}, Aqui esrtan las ventas de los depas a{ventasdepaB}, aqui las ventas de los depa b{ventasdepaC}aqui las ventas de los depa c{ventasdepaD}aqui las del d")
